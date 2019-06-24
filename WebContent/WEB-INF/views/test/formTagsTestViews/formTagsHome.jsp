@@ -50,8 +50,6 @@
 					</td>
 				</tr>
 				
-
-				
 				<tr>
 					<td><form:label path="serviceLength">Organization Age</form:label></td>
 					<td><form:select path="serviceLength" items="${serviceLengthList}"/></td>
@@ -61,17 +59,31 @@
 					<td><form:label path="registeredPreviously">registeredPreviously?</form:label></td>
 					<td><form:checkbox path="registeredPreviously" items="${registeredPreviouslyList}"/></td>
 				</tr>
-
+				
 				<tr>
 					<td><form:label path="like">Like our website?</form:label></td>
 					<td><form:checkbox path="like" value="yes"/>Like</td>
 				</tr>
+				
 				<tr>
+					<td><form:label path="optionalServices">Optional Services Subscriptions:</form:label></td>
+					<td>
+						<form:checkbox path="optionalServices" value="emailService"/>${subscriptionList.emailService}
+						<form:checkbox path="optionalServices" value="promotionService"/>${subscriptionList.promotionService}
+						<form:checkbox path="optionalServices" value="newLetterService"/>${subscriptionList.newsLetterService}
+					</td>
+				</tr>
+
+				<tr>
+					<td><form:label path="premiumServices">Premium Services</form:label></td>
+					<td><form:checkboxes path="premiumServices" items="${premiumServiceList}"/></td>
+				</tr>
 
 				<tr>
 					<td />
 					<td align="center"><input type="submit" value="Submit" /></td>
 				</tr>
+				
 			</table>
 		</form:form>
 	</div>

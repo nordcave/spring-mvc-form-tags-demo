@@ -49,6 +49,11 @@
 						</form:select>
 					</td>
 				</tr>
+				
+				<tr>
+					<td><form:label path="serviceLength">Organization Age</form:label></td>
+					<td><form:select path="serviceLength" items="${serviceLengthList}"/></td>
+				</tr>
 
 				<tr>
 					<td />

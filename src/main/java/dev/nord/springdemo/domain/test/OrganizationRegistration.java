@@ -6,6 +6,16 @@ public class OrganizationRegistration {
 	private String country;
 	private String turnover;
 	private String type;
+	private String serviceLength;
+
+	public String getServiceLength() {
+		return serviceLength;
+	}
+
+	public void setServiceLength(String serviceLength) {
+		this.serviceLength = serviceLength;
+	}
+
 
 	public String getType() {
 		return type;

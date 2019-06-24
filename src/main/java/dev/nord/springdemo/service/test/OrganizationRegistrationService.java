@@ -34,4 +34,11 @@ public class OrganizationRegistrationService {
 		return new TreeMap<String, String>(serviceLengthList);
 	}
 	
+	public Map<String, String> populateRegisteredPreviously() {
+		Map<String, String> registeredPreviously = new LinkedHashMap<String, String>();
+		registeredPreviously.put("true",  "Yes");
+		registeredPreviously.put("false",  "No");
+		return registeredPreviously;
+	}
+	
 }

@@ -50,10 +50,23 @@
 					</td>
 				</tr>
 				
+
+				
 				<tr>
 					<td><form:label path="serviceLength">Organization Age</form:label></td>
 					<td><form:select path="serviceLength" items="${serviceLengthList}"/></td>
 				</tr>
+				
+				<tr>
+					<td><form:label path="registeredPreviously">registeredPreviously?</form:label></td>
+					<td><form:checkbox path="registeredPreviously" items="${registeredPreviouslyList}"/></td>
+				</tr>
+
+				<tr>
+					<td><form:label path="like">Like our website?</form:label></td>
+					<td><form:checkbox path="like" value="yes"/>Like</td>
+				</tr>
+				<tr>
 
 				<tr>
 					<td />
